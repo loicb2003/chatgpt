@@ -35,13 +35,12 @@
         tr:nth-child(even) {
             background-color: #f2f2f2;
         }
-        .manager {
+        .caller {
             font-weight: bold;
-            color: #3366ff;
+            color: #ff9933;
         }
-        .director {
-            font-weight: bold;
-            color: #ff3333;
+        .manager, .director {
+            color: #3366ff;
         }
         .highlight {
             background-color: #ffe066;
@@ -56,57 +55,66 @@
     <table id="scoreTable">
         <thead>
             <tr>
-                <th onclick="sortTable(0)">Nom du Caller</th>
-                <th onclick="sortTable(1)">Arrivée à l'heure</th>
-                <th onclick="sortTable(2)">Appels Passés</th>
-                <th onclick="sortTable(3)">RDV fixés</th>
+                <th onclick="sortTable(0)">Position</th>
+                <th>Nom</th>
+                <th>Arrivée à l'heure</th>
+                <th>Appels Passés</th>
+                <th>RDV fixés</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td class="highlight manager">Romain</td>
+                <td class="highlight manager">-</td>
+                <td class="highlight manager">Romain (Manager)</td>
                 <td>-</td>
                 <td>-</td>
-                <td>-</td>
+                <td>20</td>
             </tr>
             <tr>
-                <td class="highlight director">Dorian</td>
+                <td class="highlight director">-</td>
+                <td class="highlight director">Dorian (Directeur)</td>
                 <td>-</td>
                 <td>-</td>
-                <td>-</td>
+                <td>15</td>
             </tr>
             <tr>
-                <td>Loic</td>
+                <td>1</td>
+                <td class="caller">Loic</td>
                 <td>Oui</td>
                 <td>50</td>
                 <td>10</td>
             </tr>
             <tr>
-                <td>Kitan</td>
+                <td>2</td>
+                <td class="caller">Kitan</td>
                 <td>Oui</td>
                 <td>45</td>
                 <td>8</td>
             </tr>
             <tr>
-                <td>Omar</td>
+                <td>3</td>
+                <td class="caller">Omar</td>
                 <td>Non</td>
                 <td>55</td>
                 <td>12</td>
             </tr>
             <tr>
-                <td>Jessy</td>
+                <td>4</td>
+                <td class="caller">Jessy</td>
                 <td>Oui</td>
                 <td>60</td>
                 <td>15</td>
             </tr>
             <tr>
-                <td>Harison</td>
+                <td>5</td>
+                <td class="caller">Harison</td>
                 <td>Oui</td>
                 <td>48</td>
                 <td>9</td>
             </tr>
             <tr>
-                <td>Benjamin</td>
+                <td>6</td>
+                <td class="caller">Benjamin</td>
                 <td>Non</td>
                 <td>40</td>
                 <td>7</td>
