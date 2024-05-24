@@ -20,6 +20,7 @@
             max-width: 1000px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
         th, td {
             border: 1px solid #ddd;
@@ -42,6 +43,13 @@
             font-weight: bold;
             color: #ff3333;
         }
+        .highlight {
+            background-color: #ffe066;
+            font-weight: bold;
+        }
+        .highlight:hover {
+            background-color: #ffd31a;
+        }
     </style>
 </head>
 <body>
@@ -56,13 +64,13 @@
         </thead>
         <tbody>
             <tr>
-                <td>Romain</td>
+                <td class="highlight manager">Romain</td>
                 <td>-</td>
                 <td>-</td>
                 <td>-</td>
             </tr>
             <tr>
-                <td>Dorian</td>
+                <td class="highlight director">Dorian</td>
                 <td>-</td>
                 <td>-</td>
                 <td>-</td>
